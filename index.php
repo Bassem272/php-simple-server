@@ -1,9 +1,9 @@
 <?php
-// Get the port assigned by Railway, default to 8080 if not found
-$port = getenv('PORT') ?: 8080;
-
-// Start a simple PHP server on the correct port
-echo "Hello from PHP server!";
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 // A very basic response to check if the server is working
 echo "Hello from PHP server!";
