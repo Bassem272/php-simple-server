@@ -1,0 +1,4 @@
+# .platform.app.yaml
+runtime: php
+php:
+  version: '8.0'  # Specify the desired version, or change this depending on your requirements
